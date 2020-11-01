@@ -1,0 +1,72 @@
+img.bgrnd
+{
+	height:100%; 
+	width:100%; 
+	position:fixed; 
+	top:0px; 
+	left:0px; 
+	z-index:-1;
+}
+
+h1
+{
+   font:bold 24pt Georgia;
+   margin:auto;
+   position: relative;
+   top: 50px;
+   left: 30%;
+   color:dodgerblue;
+    
+}
+img.shelf
+{
+	height:800px;
+	width:800px;
+	position:absolute;
+    top:150px;
+    text-align: center;
+	left:300px;
+	padding-left:125px;
+}
+
+
+.menucontainer
+{
+	display:block;
+	margin:auto;					
+	text-align:center;
+	width:60%;
+	position:relative;
+    color: mediumpurple;
+}
+
+.subcontainer
+{
+	display:none;
+	position:absolute;
+	width:100%;
+
+}
+.submenuitem
+{
+	font:14pt arial;
+}
+.submenuitem:hover
+{
+	color:purple;
+	background-color:lavender;
+}
+.menuitem
+{
+    position: relative;
+    top: 150px;
+    left: -50%;
+    height: 100px;
+	font:bold 18pt arial;
+	cursor:pointer;
+}
+a
+{
+    text-decoration: none;
+    color: deeppink;
+}

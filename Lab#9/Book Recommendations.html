@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Book Recommendations  </title>
+    <link type = "text/css" rel = "stylesheet" href = "recommendation.css" />
+	    <script>
+            function comment()
+        {
+                text = words.value;
+                document.getElementById("div").innerHTML += '<div>'+text/*basically adds text to the display down at comment*/
+                document.getElementById("text").value = "enter"
+                /* so whenever u click on the input button "enter" it basically has the same value as what you typed in, and using the div you display that to your comment section.*/
+        }
+</script> 
+	<style> </style>
+</head>
+<body>
+    <h1> Recommendations for other books!</h1>
+    <img class= "bgrnd" src="book-wallpaper.jpg"/>
+    <span> As a reader I love to review, and I'm sure you guys would like to too. If you've read any of these books, you can review here sharing waht you thought of the books, if you liked it or not. If you've any other books in mind you can share it here as well. Not everyone knows every book, share your knowledge and let us read more books.</span>
+    
+    
+    <form>
+        <textarea id="text" rows="15" cols="25" placeholder="Enter Comment here"></textarea>
+        <input type="button" onclick="getwords()" value="Enter" /> <br>
+        <div id="div"></div>
+    </form>
+    
+    <a href = "index.html" > Home Page </a>
+
+  
+</body>
+</html>

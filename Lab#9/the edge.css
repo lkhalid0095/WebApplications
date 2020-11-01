@@ -1,0 +1,47 @@
+img.bgrnd
+{
+	height:100%; 
+	width:100%; 
+	position:fixed; 
+	top:0px; 
+	left:0px; 
+	z-index:-1;
+    opacity: 0.6;
+    
+}
+img.book
+{
+    height: 300px;
+    width: 200px;
+    position: relative;
+    left: 50px;
+    top: 25px;
+}
+h1
+{
+    text-align: center;
+    color: darkblue;
+}
+span
+{
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 300px;
+    font-size: 14pt;
+    font-family: comic sans ms;
+    font-weight: bold;
+    padding-left: 125px;
+    padding-top: 30px;
+    padding-right: 125px;
+    
+}
+a
+{
+    position:absolute;
+    top: 450px;
+    left: 110px;
+    font-size: 16pt;
+    color: azure;
+    text-decoration: none;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Lubna Khalid -->
+<html>
+<head>
+	<title> Let's Read </title>
+	<link type = "text/css" rel = "stylesheet" href = "books.css" />
+	<script> 
+    
+    function initialize()
+        {
+            mainContainer = document.getElementById("maincontainer");
+            menuList = mainContainer.getElementsByClassName("menuitem");
+            idx=0;
+            shelfOut= document.getElementsByClassName("shelf");
+            makeSlideShow();
+        }
+	function toggleMenuItems(parentItem, displayVal)
+    {
+	   var subList = parentItem.getElementsByClassName("subcontainer");
+	   subList[0].style.display = displayVal;	
+    }
+        
+    function makeSlideShow()
+        {
+            for(var i=0; i< shelfOut.length; i++)
+                {
+                    shelfOut[i].style.display = "none";
+                }
+            idx++;
+                if(idx > shelfOut.length)
+                    {
+                        idx=1;
+                    }
+                shelfOut[idx - 1].style.display = "block";
+                setTimeout(makeSlideShow, 3000);
+        }
+
+	</script>
+    <script>
+
+	</script>
+	<style> 
+	 
+	</style>
+</head>
+<body onload="initialize();">
+  <img class= "bgrnd" src= "bckgrnd.jpeg"/>
+    <h1> <span> Searching For the Right Book </span> </h1>
+        <div class= "content" >
+            <img class= "shelf" src= "bookshelves%201.png"/>
+            <img class= "shelf" src= "bookshelves%202.png"/> 
+            <img class= "shelf" src= "bookshelves%203.png"/>
+            <img class= "shelf" src= "bookshelves%204.png"/>
+        </div>
+
+     <div class = "menucontainer" id = "maincontainer">
+			<h2 class = "menuitem" onmouseover = "toggleMenuItems(menuList[0], 'block');",     
+			onmouseout = "toggleMenuItems(menuList[0], 'none');">
+				Fiction<br />
+				<div class = "subcontainer">
+					<span class = "submenuitem"> <a href="The%20Edge%20of%20Everything.html"> The Edge of Everything </a> </span><br />
+					<span class = "submenuitem"><a href = "The%20Hundred%20Lies%20of%20Lizzie%20Lovett.html" >The Hundred Lies of Lizzie Lovett </a></span>
+				</div>
+			</h2>
+			
+			
+			<h2 class = "menuitem" onmouseover = "toggleMenuItems(menuList[1], 'block');",  
+			onmouseout = "toggleMenuItems(menuList[1], 'none');">
+				Science Fiction <br/>
+				<div class = "subcontainer">
+                    <span class = "submenuitem"><a href="All%20the%20Bird%20in%20the%20Sky.html"> All the Birds in the Sky </a></span><br/>
+                    <span class = "submenuitem"><a href="The%20Queen%20of%20Blood.html">The Queen of Blood</a></span><br/>
+
+				</div>
+			</h2>
+			
+			<h2 class = "menuitem" onmouseover = "toggleMenuItems(menuList[2], 'block');", 
+			onmouseout = "toggleMenuItems(menuList[2], 'none');">
+				Mystery <br />
+				<div class = "subcontainer">
+                    <span class = "submenuitem"><a href="The%20Girl%20on%20the%20Train.html"> The Girl on the Train </a></span><br />
+                    <span class = "submenuitem"><a href="The%20Wrong%20Side%20of%20Goodbye.html">The Wrong Side of Goodbye </a></span><br />
+				</div>
+			</h2>
+			
+			<h2 class = "menuitem" onmouseover = "toggleMenuItems(menuList[3], 'block');", onmouseout = "toggleMenuItems(menuList[3], 'none');">
+				Horror<br />
+				<div class = "subcontainer">
+                    <span class = "submenuitem"> <a href="Dissappearance%20at%20Devil's%20Rock.html"> Dissapearance at Devil's Rock </a> </span><br />
+                    <span class = "submenuitem"> <a href="Hex.html"> Hex </a></span><br />
+				</div>
+			</h2>
+			
+			<h2 class = "menuitem" onmouseover = "toggleMenuItems(menuList[4], 'block');", onmouseout = "toggleMenuItems(menuList[4], 'none');">
+				Review It!<br />
+				<div class = "subcontainer">
+                    <span class = "submenuitem"> <a href="Book%20Recommendations.html"> Book Recomendations </a></span><br />
+		 	
+
+				</div>
+			</h2>
+		</div>
+</body>
+</html>
